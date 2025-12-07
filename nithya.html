@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithya T M | Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0e7490', // Cyan-700
+                        secondary: '#155e75', // Cyan-800
+                        bg: '#f0f9ff', // Sky-50
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+
+        /* Animation classes */
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-700 font-sans leading-relaxed">
+
+    <header class="bg-gradient-to-r from-cyan-900 to-blue-900 text-white pt-20 pb-24 shadow-lg relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <div class="mx-auto w-40 h-40 mb-6 relative group">
+                <div class="absolute inset-0 bg-cyan-400 rounded-full blur opacity-50 group-hover:opacity-75 transition duration-500"></div>
+                <img src="nithya.png" 
+                     onerror="this.src='https://ui-avatars.com/api/?name=Nithya+T+M&background=0D9488&color=fff&size=160'" 
+                     alt="Nithya T M" 
+                     class="w-40 h-40 rounded-full object-cover border-4 border-white shadow-2xl relative z-10 transform transition duration-500 group-hover:scale-105">
+            </div>
+            
+            <h1 class="text-4xl md:text-5xl font-bold mb-2 tracking-tight">Nithya T M</h1>
+            <p class="text-cyan-100 text-lg md:text-xl font-light">Computer Science & Engineering (AIML) Student</p>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-4 md:px-6 -mt-12 mb-12 relative z-20">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <aside class="lg:col-span-1 space-y-6">
+                
+                <div class="bg-white rounded-2xl shadow-xl p-6 fade-in-up">
+                    <h2 class="text-xl font-bold text-slate-800 mb-6 flex items-center border-b pb-3 border-slate-100">
+                        <i class="fas fa-address-card text-cyan-600 mr-3"></i> Contact
+                    </h2>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start group">
+                            <div class="w-8 h-8 rounded-full bg-cyan-50 flex items-center justify-center text-cyan-600 mr-3 group-hover:bg-cyan-600 group-hover:text-white transition-colors duration-300">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <span class="block text-slate-400 text-xs uppercase font-semibold">Location</span>
+                                <span class="text-slate-700 font-medium">India, Bengaluru</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start group">
+                            <div class="w-8 h-8 rounded-full bg-cyan-50 flex items-center justify-center text-cyan-600 mr-3 group-hover:bg-cyan-600 group-hover:text-white transition-colors duration-300">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="block text-slate-400 text-xs uppercase font-semibold">Phone</span>
+                                <span class="text-slate-700 font-medium">9380253494</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start group">
+                            <div class="w-8 h-8 rounded-full bg-cyan-50 flex items-center justify-center text-cyan-600 mr-3 group-hover:bg-cyan-600 group-hover:text-white transition-colors duration-300">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <span class="block text-slate-400 text-xs uppercase font-semibold">Email</span>
+                                <a href="mailto:nithun660@gmail.com" class="text-cyan-600 hover:text-cyan-800 transition break-all font-medium">nithun660@gmail.com</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start group">
+                            <div class="w-8 h-8 rounded-full bg-cyan-50 flex items-center justify-center text-cyan-600 mr-3 group-hover:bg-cyan-600 group-hover:text-white transition-colors duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div>
+                                <span class="block text-slate-400 text-xs uppercase font-semibold">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/nithya-t-m-a74574386" target="_blank" class="text-cyan-600 hover:text-cyan-800 transition font-medium">View Profile</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-6 fade-in-up delay-100">
+                    <h2 class="text-xl font-bold text-slate-800 mb-6 flex items-center border-b pb-3 border-slate-100">
+                        <i class="fas fa-layer-group text-cyan-600 mr-3"></i> Domain & Tech Skills
+                    </h2>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-semibold hover:bg-cyan-100 hover:text-cyan-700 transition cursor-default">Communication Strategy</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-semibold hover:bg-cyan-100 hover:text-cyan-700 transition cursor-default">Leadership</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-semibold hover:bg-cyan-100 hover:text-cyan-700 transition cursor-default">Visual Storytelling</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-semibold hover:bg-cyan-100 hover:text-cyan-700 transition cursor-default">Editing</span>
+                    </div>
+
+                    <h3 class="text-md font-bold text-slate-800 mt-6 mb-3 flex items-center">
+                        <i class="fas fa-user-check text-cyan-600 mr-2 text-sm"></i> Soft Skills & Strengths
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-full text-xs border border-slate-200">Public Speaking</span>
+                        <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-full text-xs border border-slate-200">Presentation</span>
+                        <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-full text-xs border border-slate-200">Strategic Leadership</span>
+                        <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-full text-xs border border-slate-200">Quick Learner</span>
+                        <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-full text-xs border border-slate-200">Analytical Thinking</span>
+                        <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-full text-xs border border-slate-200">Strong Interpersonal Skills</span>
+                        <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-full text-xs border border-slate-200">Positive Attitude</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-6 fade-in-up delay-200">
+                    <h2 class="text-xl font-bold text-slate-800 mb-4 flex items-center border-b pb-3 border-slate-100">
+                        <i class="fas fa-language text-cyan-600 mr-3"></i> Languages
+                    </h2>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="flex items-center text-slate-600 text-sm"><i class="fas fa-check text-green-500 mr-2"></i> English</div>
+                        <div class="flex items-center text-slate-600 text-sm"><i class="fas fa-check text-green-500 mr-2"></i> Hindi</div>
+                        <div class="flex items-center text-slate-600 text-sm"><i class="fas fa-check text-green-500 mr-2"></i> Kannada</div>
+                        <div class="flex items-center text-slate-600 text-sm"><i class="fas fa-check text-green-500 mr-2"></i> Telugu</div>
+                    </div>
+                </div>
+
+            </aside>
+
+            <main class="lg:col-span-2 space-y-6">
+                
+                <section class="bg-white rounded-2xl shadow-xl p-8 fade-in-up delay-100 border-l-4 border-cyan-600">
+                    <h2 class="text-2xl font-bold text-slate-800 mb-4">Professional Overview</h2>
+                    <p class="text-slate-600 leading-relaxed text-lg">
+                        I blend creative design with analytical logic to build strategies that work. Currently bridging the gap between <strong class="text-cyan-700">technology and communication</strong>, I focus on driving brand visibility and leading communication efforts. I possess a strong mix of strategic leadership, data-driven insight, and creative execution skills.
+                    </p>
+                </section>
+
+                <section class="bg-white rounded-2xl shadow-xl p-8 fade-in-up delay-200">
+                    <h2 class="text-2xl font-bold text-slate-800 mb-6 flex items-center">
+                        <div class="bg-cyan-100 p-2 rounded-lg mr-3">
+                            <i class="fas fa-graduation-cap text-cyan-700"></i>
+                        </div>
+                        Education History
+                    </h2>
+
+                    <div class="relative border-l-2 border-slate-200 ml-3 space-y-8">
+                        
+                        <div class="ml-8 relative">
+                            <span class="absolute -left-11 top-1 w-6 h-6 bg-cyan-600 border-4 border-white rounded-full shadow"></span>
+                            
+                            <h3 class="text-xl font-bold text-slate-800">Bachelor of Engineering (B.E.)</h3>
+                            <p class="text-cyan-600 font-medium mb-1">Computer Science & Engineering (AIML)</p>
+                            <p class="text-slate-500 text-sm mb-2">New Ebenezer Institute of Technology</p>
+                            <span class="inline-block bg-green-100 text-green-700 text-xs px-2 py-1 rounded font-semibold">Status: Fresher</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl shadow-xl p-8 fade-in-up delay-300">
+                    <h2 class="text-xl font-bold text-slate-800 mb-4 flex items-center">
+                        <i class="fas fa-star text-cyan-600 mr-3"></i> Extra-Curricular Activities
+                    </h2>
+                    <ul class="list-disc ml-5 text-slate-600 space-y-2">
+                        <li>Volunteer and coordinator in outreach programs and social service activities.</li>
+                        <li>Member and coordinator in Interact Club under the Rotary Club.</li>
+                    </ul>
+                </section>
+
+                <div class="text-center text-slate-400 text-sm mt-8 pb-4">
+                    &copy; 2025 Nithya T M. All rights reserved.
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
